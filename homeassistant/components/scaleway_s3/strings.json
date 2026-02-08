@@ -10,6 +10,14 @@
       "invalid_endpoint_url": "Invalid endpoint URL"
     },
     "step": {
+      "reauth_confirm": {
+        "data": {
+          "access_key_id": "[%key:component::scaleway_s3::config::step::user::data::access_key_id%]",
+          "secret_access_key": "[%key:component::scaleway_s3::config::step::user::data::secret_access_key%]"
+        },
+        "description": "The credentials for bucket `{bucket}` in region `{region}` need to be updated.",
+        "title": "Reauthenticate Scaleway integration"
+      },
       "user": {
         "data": {
           "access_key_id": "Access key ID",
@@ -24,14 +32,6 @@
           "secret_access_key": "Secret access key to connect to Scaleway Object Storage"
         },
         "title": "Add Scaleway Object Storage bucket"
-      },
-      "reauth_confirm": {
-        "data": {
-          "access_key_id": "[%key:component::scaleway_s3::config::step::user::data::access_key_id%]",
-          "secret_access_key": "[%key:component::scaleway_s3::config::step::user::data::secret_access_key%]"
-        },
-        "description": "The credentials for bucket `{bucket}` in region `{region}` need to be updated.",
-        "title": "Reauthenticate Scaleway integration"
       }
     }
   },
