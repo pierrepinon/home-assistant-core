@@ -1,0 +1,5 @@
+{
+  "domain": "scaleway",
+  "name": "Scaleway",
+  "integrations": ["scaleway_s3"]
+}

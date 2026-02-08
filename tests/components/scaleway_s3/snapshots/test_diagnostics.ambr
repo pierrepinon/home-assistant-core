@@ -1,0 +1,20 @@
+# serializer version: 1
+# name: test_diagnostics
+  dict({
+    'bucket_info': dict({
+      'exists': True,
+      'region': 'fr-par',
+    }),
+    'entry': dict({
+      'access_token': '**REDACTED**',
+      'bucket': 'test-bucket',
+      'region': 'fr-par',
+      'secret_key': '**REDACTED**',
+    }),
+    'storage_info': dict({
+      'backup_files': 2,
+      'metadata_files': 2,
+      'total_objects': 4,
+    }),
+  })
+# ---

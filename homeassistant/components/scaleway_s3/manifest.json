@@ -1,0 +1,12 @@
+{
+  "domain": "scaleway_s3",
+  "name": "Scaleway S3",
+  "codeowners": ["@pierrepinon"],
+  "config_flow": true,
+  "dependencies": ["backup"],
+  "documentation": "https://www.home-assistant.io/integrations/scaleway_s3",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "quality_scale": "gold",
+  "requirements": ["aiobotocore==2.21.1"]
+}

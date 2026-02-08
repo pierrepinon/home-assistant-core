@@ -5890,6 +5890,17 @@
       "config_flow": true,
       "iot_class": "local_polling"
     },
+    "scaleway": {
+      "name": "Scaleway",
+      "integrations": {
+        "scaleway_s3": {
+          "name": "Scaleway S3",
+          "integration_type": "service",
+          "config_flow": true,
+          "iot_class": "cloud_push"
+        }
+      }
+    },
     "schlage": {
       "name": "Schlage",
       "integration_type": "hub",

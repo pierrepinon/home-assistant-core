@@ -600,6 +600,7 @@ FLOWS = {
         "sanix",
         "satel_integra",
         "saunum",
+        "scaleway",
         "schlage",
         "scrape",
         "screenlogic",

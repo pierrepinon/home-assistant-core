@@ -1,0 +1,132 @@
+rules:
+  # Bronze
+  action-setup:
+    status: exempt
+    comment: Integration does not register custom actions.
+  appropriate-polling:
+    status: exempt
+    comment: This integration does not poll.
+  brands: done
+  common-modules: done
+  config-flow-test-coverage: done
+  config-flow: done
+  dependency-transparency: done
+  docs-actions:
+    status: exempt
+    comment: This integration does not have any custom actions.
+  docs-high-level-description:
+    status: exempt
+    comment: Documentation will be created before initial release.
+  docs-installation-instructions:
+    status: exempt
+    comment: Documentation will be created before initial release.
+  docs-removal-instructions:
+    status: exempt
+    comment: Documentation will be created before initial release.
+  entity-event-setup:
+    status: exempt
+    comment: This integration does not have entities.
+  entity-unique-id:
+    status: exempt
+    comment: This integration does not have entities.
+  has-entity-name:
+    status: exempt
+    comment: This integration does not have entities.
+  runtime-data: done
+  test-before-configure: done
+  test-before-setup: done
+  unique-config-entry: done
+
+  # Silver
+  action-exceptions:
+    status: exempt
+    comment: Integration does not register custom actions.
+  config-entry-unloading: done
+  docs-configuration-parameters:
+    status: exempt
+    comment: This integration does not have an options flow.
+  docs-installation-parameters:
+    status: exempt
+    comment: Documentation will be created before initial release.
+  entity-unavailable:
+    status: exempt
+    comment: This integration does not have entities.
+  integration-owner: done
+  log-when-unavailable:
+    status: exempt
+    comment: This integration does not have entities that can become unavailable.
+  parallel-updates:
+    status: exempt
+    comment: This integration does not poll.
+  reauthentication-flow: done
+  test-coverage: done
+
+  # Gold
+  devices:
+    status: exempt
+    comment: This integration does not have devices.
+  diagnostics:
+    status: exempt
+    comment: No diagnostics needed for this integration.
+  discovery-update-info:
+    status: exempt
+    comment: Scaleway Object Storage is not discovered on the network.
+  discovery:
+    status: exempt
+    comment: Scaleway Object Storage is not discovered on the network.
+  docs-data-update:
+    status: exempt
+    comment: This integration does not poll.
+  docs-examples:
+    status: exempt
+    comment: The integration extends core backup functionality and does not require examples.
+  docs-known-limitations:
+    status: exempt
+    comment: No known limitations.
+  docs-supported-devices:
+    status: exempt
+    comment: This integration does not support physical devices.
+  docs-supported-functions:
+    status: exempt
+    comment: Documentation will be created before initial release.
+  docs-troubleshooting:
+    status: exempt
+    comment: Error messages in config flow and exceptions provide sufficient troubleshooting guidance.
+  docs-use-cases:
+    status: exempt
+    comment: Documentation will be created before initial release.
+  dynamic-devices:
+    status: exempt
+    comment: This integration does not have devices.
+  entity-category:
+    status: exempt
+    comment: This integration does not have entities.
+  entity-device-class:
+    status: exempt
+    comment: This integration does not have entities.
+  entity-disabled-by-default:
+    status: exempt
+    comment: This integration does not have entities.
+  entity-translations:
+    status: exempt
+    comment: This integration does not have entities.
+  exception-translations: done
+  icon-translations:
+    status: exempt
+    comment: This integration does not use icons.
+  reconfiguration-flow:
+    status: exempt
+    comment: Configuration is immutable after setup (bucket and region cannot be changed).
+  repair-issues:
+    status: exempt
+    comment: There are no issues which can be repaired.
+  stale-devices:
+    status: exempt
+    comment: This integration does not have devices.
+
+  # Platinum
+  async-dependency: done
+  inject-websession:
+    status: exempt
+    comment: aiobotocore manages HTTP sessions internally.
+  strict-typing: todo

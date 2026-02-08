@@ -1,0 +1,49 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "error": {
+      "cannot_connect": "[%key:component::scaleway_s3::exceptions::cannot_connect::message%]",
+      "invalid_bucket_name": "[%key:component::scaleway_s3::exceptions::invalid_bucket_name::message%]",
+      "invalid_credentials": "[%key:component::scaleway_s3::exceptions::invalid_credentials::message%]",
+      "invalid_endpoint_url": "Invalid endpoint URL"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "access_key_id": "Access key ID",
+          "bucket": "Bucket name",
+          "region": "Region",
+          "secret_access_key": "Secret access key"
+        },
+        "data_description": {
+          "access_key_id": "Access key ID to connect to Scaleway Object Storage",
+          "bucket": "Bucket must already exist and be writable by the provided credentials",
+          "region": "Scaleway region where your bucket is located",
+          "secret_access_key": "Secret access key to connect to Scaleway Object Storage"
+        },
+        "title": "Add Scaleway Object Storage bucket"
+      },
+      "reauth_confirm": {
+        "data": {
+          "access_key_id": "[%key:component::scaleway_s3::config::step::user::data::access_key_id%]",
+          "secret_access_key": "[%key:component::scaleway_s3::config::step::user::data::secret_access_key%]"
+        },
+        "description": "The credentials for bucket `{bucket}` in region `{region}` need to be updated.",
+        "title": "Reauthenticate Scaleway integration"
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Cannot connect to Scaleway Object Storage"
+    },
+    "invalid_bucket_name": {
+      "message": "Invalid bucket name"
+    },
+    "invalid_credentials": {
+      "message": "Bucket cannot be accessed using provided combination of access key ID and secret access key"
+    }
+  }
+}
